@@ -792,6 +792,39 @@ p {
     transform: translateY(0);
 }
 
+iframe {
+    background: var(--bg-secondary);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    transition: var(--transition);
+    border: 1px solid var(--bg-hover);
+    position: relative;
+    overflow: hidden;
+}
+
+iframe::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(45deg, transparent, var(--primary-glow), transparent);
+    opacity: 0;
+    transition: var(--transition);
+}
+
+iframe:hover {
+    transform: translateY(-2px);
+    border-color: var(--primary);
+}
+
+iframe:hover::before {
+    opacity: 0.1;
+}
+
 .features-grid,
 .feature-card,
 .feature-icon,
