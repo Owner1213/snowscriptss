@@ -20,19 +20,19 @@ function copyToClipboard(button, text) {
     });
 }
 
-function updateStatusUI(service, isOnline) {
+function updateStatusUI(service, isOnline, statusText) {
     const dot = document.getElementById(`${service}Status`);
-    const text = document.getElementById(`${service}StatusText`);
+    const textElement = document.getElementById(`${service}StatusText`);
 
     dot.className = `status-dot ${isOnline ? 'online' : 'offline'}`;
-    text.textContent = isOnline ? 'Operational' : 'Down';
-    text.style.color = isOnline ? 'var(--success)' : '#f7768e';
+    textElement.textContent = isOnline ? 'Operational' : statusText;
+    textElement.style.color = isOnline ? 'var(--success)' : '#f7768e';
 }
 
 async function checkStatus() {
     try {
         updateStatusUI('script', true);
-        updateStatusUI('dev', true);
+        updateStatusUI('dev', false, 'MacSploit is down');
     } catch (error) {
         console.error('Error checking status:', error);
         updateStatusUI('script', false);
