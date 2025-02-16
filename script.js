@@ -31,8 +31,8 @@ function updateStatusUI(service, isOnline, statusText) {
 
 async function checkStatus() {
     try {
-        updateStatusUI('script', false, 'Script is not finished');
-        updateStatusUI('dev', false, 'MacSploit is down');
+        updateStatusUI('script', true);
+        updateStatusUI('dev', true);
     } catch (error) {
         console.error('Error checking status:', error);
         updateStatusUI('script', false);
