@@ -1,87 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>snowscriptss</title>
     <link rel="stylesheet" href="style.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <div class="logo">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2L9.19 8.63l-7.19.62 5.69 4.73L5.95 21 12 17.27 18.05 21l-1.74-7.02 5.69-4.73-7.19-.62z" />
-                <path
-                    d="M12 4.29l1.95 4.55.41.11 4.95.43-3.92 3.26-.31.26.09.4 1.2 4.83-4.2-2.56-.37-.23-.37.23-4.2 2.56 1.2-4.83.09-.4-.31-.26-3.92-3.26 4.95-.43.41-.11z" />
-            </svg>
-            snowscriptss
-        </div>
-        <div class="hero-section">
-            <h1>Scripts, for fun.</h1>
-            <p class="hero-description">Offering keyless scripts, for free.</p>
-            <!--  <div class="preview-container">
+      <div class="logo">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M12 2L9.19 8.63l-7.19.62 5.69 4.73L5.95 21 12 17.27 18.05 21l-1.74-7.02 5.69-4.73-7.19-.62z"
+          />
+          <path
+            d="M12 4.29l1.95 4.55.41.11 4.95.43-3.92 3.26-.31.26.09.4 1.2 4.83-4.2-2.56-.37-.23-.37.23-4.2 2.56 1.2-4.83.09-.4-.31-.26-3.92-3.26 4.95-.43.41-.11z"
+          />
+        </svg>
+        snowscriptss
+      </div>
+      <div class="hero-section">
+        <h1>Scripts, for fun.</h1>
+        <p class="hero-description">Offering keyless scripts, for free.</p>
+        <!--  <div class="preview-container">
                 <img src="preview.png" alt="Script preview" class="preview-image" loading="lazy">
             </div> -->
-        </div>
+      </div>
 
-        <h2>Script</h2>
+      <h2>Script</h2>
 
-        <div class="install-options">
-            <div class="install-option recommended">
-                <h4>Loader <span class="chip recommended">Universal</span></h4>
-                <p>Simple one-line code that automatically detects your game.</p>
-                <div class="code-block">
-                    <pre><span class="loadstring">loadstring</span><span class="p">(</span><span class="yellowgame">game</span><span class="bluehttp">:HttpGet</span><span class="p2">(</span><span class="string">'https://raw.githubusercontent.com/Owner1213/snowscripts-remade/main/universal/Bootstrapper.lua'</span><span class="p2">)</span><span class="p">)</span></pre>
-                    <button class="copy-button"
-                        onclick="copyToClipboard(this, `loadstring(game:HttpGet('https://raw.githubusercontent.com/Owner1213/snowscripts/main/universal/Bootstrapper.lua'))`)">
-                        <svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path
-                                d="M8 4v12a2 2 0 002 2h8a2 2 0 002-2V7.242a2 2 0 00-.602-1.43L16.083 2.57A2 2 0 0014.685 2H10a2 2 0 00-2 2z" />
-                            <path d="M16 18v2a2 2 0 01-2 2H6a2 2 0 01-2-2V9a2 2 0 012-2h2" />
-                        </svg>
-                    </button>
-                    <div class="tooltip">Copy to clipboard</div>
-                </div>
-            </div>
+      <div class="install-options">
+        <div class="install-option recommended">
+          <h4>Loader <span class="chip recommended">Universal</span></h4>
+          <p>Simple one-line code that automatically detects your game.</p>
+          <div class="code-block">
+            <pre><span class="loadstring">loadstring</span><span class="p">(</span><span class="yellowgame">game</span><span class="bluehttp">:HttpGet</span><span class="p2">(</span><span class="string">'https://raw.githubusercontent.com/Owner1213/snowscripts-remade/main/universal/Bootstrapper.lua'</span><span class="p2">)</span><span class="p">)</span></pre>
+            <button
+              class="copy-button"
+              onclick="copyToClipboard(this, `loadstring(game:HttpGet('https://raw.githubusercontent.com/Owner1213/snowscripts/main/universal/Bootstrapper.lua'))`)"
+            >
+              <svg
+                class="copy-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M8 4v12a2 2 0 002 2h8a2 2 0 002-2V7.242a2 2 0 00-.602-1.43L16.083 2.57A2 2 0 0014.685 2H10a2 2 0 00-2 2z"
+                />
+                <path
+                  d="M16 18v2a2 2 0 01-2 2H6a2 2 0 01-2-2V9a2 2 0 012-2h2"
+                />
+              </svg>
+            </button>
+            <div class="tooltip">Copy to clipboard</div>
+          </div>
         </div>
-        <div class="note">
-            <span class="highlight">Important Requirements:</span>
-            <ul>
-                <li>Good executor (AWP, MacSploit etc.)</li>
-            </ul>
-            <p>The Bootstrapper will automatically detect your game.</p>
-            <br>
-            <span class="highlight2">Supported Games:</span>
-            <ul>
-                <li>Raise A Floppa</li>
-            </ul>
-        </div>
+      </div>
+      <div class="note">
+        <span class="highlight">Important Requirements:</span>
+        <ul>
+          <li>Good executor (AWP, MacSploit etc.)</li>
+        </ul>
+        <p>The Bootstrapper will automatically detect your game.</p>
+        <br />
+        <span class="highlight2">Supported Games:</span>
+        <ul>
+          <li>Raise A Floppa</li>
+        </ul>
+      </div>
 
-        <iframe src="https://discord.com/widget?id=1340058006980661248&theme=dark" width="850" height="520"
-                allowtransparency="true" frameborder="0"
-                sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+      <iframe
+        src="https://discord.com/widget?id=1340058006980661248&theme=dark"
+        allowtransparency="true"
+        frameborder="0"
+        sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+      ></iframe>
 
-        <h2>Service Status</h2>
-        <div class="status-dashboard">
-            <div class="status-card">
-                <div class="status-dot" id="scriptStatus"></div>
-                <div class="status-info">
-                    <h3>Script Status</h3>
-                    <p class="status-text" id="scriptStatusText">Checking...</p>
-                </div>
-            </div>
-            <div class="status-card">
-                <div class="status-dot" id="devStatus"></div>
-                <div class="status-info">
-                    <h3>Development Status</h3>
-                    <p class="status-text" id="devStatusText">Checking...</p>
-                </div>
-            </div>
+      <h2>Service Status</h2>
+      <div class="status-dashboard">
+        <div class="status-card">
+          <div class="status-dot" id="scriptStatus"></div>
+          <div class="status-info">
+            <h3>Script Status</h3>
+            <p class="status-text" id="scriptStatusText">Checking...</p>
+          </div>
         </div>
+        <div class="status-card">
+          <div class="status-dot" id="devStatus"></div>
+          <div class="status-info">
+            <h3>Development Status</h3>
+            <p class="status-text" id="devStatusText">Checking...</p>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
