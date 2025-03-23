@@ -9,6 +9,7 @@
     --bg-hover: #2f334d;
     --success: #9ece6a;
     --highlight: #e0af68;
+    --highlight2: var(--code-green);
     --code-blue: #88ccc1;
     --code-bluehttpget: #7ea4e4;
     --code-yellowgame: #f0dbac;
@@ -442,6 +443,14 @@ p {
 
 .highlight {
     color: var(--highlight);
+    font-weight: 600;
+    font-size: 1.1rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.highlight2 {
+    color: var(--highlight2);
     font-weight: 600;
     font-size: 1.1rem;
     display: inline-block;
